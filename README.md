@@ -7,6 +7,10 @@ Get up and running with n8n on the following platforms:
 
 If you have questions after trying the tutorials, check out the [forums](https://community.n8n.io/).
 
+## Network access
+
+Caddy publishes ports 80 and 443 and proxies requests to n8n on the Compose network at `n8n:5678`. Access n8n and its webhooks through the configured HTTPS hostname. Port 5678 is not published on the host, so direct connections to the server's IP address on that port will not work.
+
 ## Prerequisites
 
 Self-hosting n8n requires technical knowledge, including:
